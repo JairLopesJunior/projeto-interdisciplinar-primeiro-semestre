@@ -1,3 +1,4 @@
+import { CardModule } from './components/card/card.module';
 import { PagesModule } from './pages/pages.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -18,6 +19,7 @@ import { HomeComponent } from './pages/home/home.component';
   imports: [
     CommonModule,
     PagesModule,
+    CardModule,
     RouterModule.forChild([
       {
           path: '', component: HomeComponent

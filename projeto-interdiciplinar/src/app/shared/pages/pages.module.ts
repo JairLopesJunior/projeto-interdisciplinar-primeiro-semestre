@@ -1,30 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HomeComponent } from './home/home.component';
 import { ContatoComponent } from './contato/contato.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { RouterModule } from '@angular/router';
+import { HomeModule } from './home/home.module';
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
     ContatoComponent,
     CadastroComponent,
     PerfilComponent
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild([
-      {
-          path: 'perfil', component: PerfilComponent
-      }
-    ])
+    HomeModule
   ],
   exports: [
-    HomeComponent,
     ContatoComponent,
     CadastroComponent,
     PerfilComponent
