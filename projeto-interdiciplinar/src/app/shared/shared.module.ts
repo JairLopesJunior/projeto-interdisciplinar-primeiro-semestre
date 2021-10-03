@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from '../home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +13,15 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild([
+      {
+          path: '', component: HomeComponent
+      },
+      {
+          path: 'home', component: HomeComponent
+      }
+    ])
   ],
   exports: [
     NavbarComponent,

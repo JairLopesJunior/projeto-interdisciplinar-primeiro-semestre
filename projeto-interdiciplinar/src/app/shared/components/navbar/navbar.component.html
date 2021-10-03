@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" style="margin-left: 2rem;">Projeto Interdiciplinar</a>
+    <a [routerLink]="''" routerLinkActive='active' class="navbar-brand" style="margin-left: 2rem;">Projeto Interdiciplinar</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,19 +10,19 @@
 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a routerLinkActive='active' routerLinkActive="active" class="nav-link"><b>HOME</b></a>
+                <a [routerLink]="['home']" routerLinkActive='active' class="nav-link"><b>HOME</b></a>
             </li>
         </ul>
 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a routerLinkActive='active' routerLinkActive="active" class="nav-link"><b>CADASTRE-SE</b></a>
+                <a [routerLink]="['cadastro']" routerLinkActive='active' class="nav-link"><b>CADASTRE-SE</b></a>
             </li>
         </ul>
 
         <ul class="navbar-nav" style="margin-right: 2rem;">
             <li class="nav-item">
-                <a routerLinkActive='active' routerLinkActive="active" class="nav-link"><b>CONTATO</b></a>
+                <a [routerLink]="['contato']" routerLinkActive='active' class="nav-link"><b>CONTATO</b></a>
             </li>
         </ul>
     </div>
