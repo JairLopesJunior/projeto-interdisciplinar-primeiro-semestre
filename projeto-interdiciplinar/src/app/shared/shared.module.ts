@@ -1,3 +1,4 @@
+import { InputModule } from './components/input/input.module';
 import { CardModule } from './components/card/card.module';
 import { PagesModule } from './pages/pages.module';
 import { NgModule } from '@angular/core';
@@ -9,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SelectModule } from './components/select/select.module';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { HomeComponent } from './pages/home/home.component';
   imports: [
     CommonModule,
     PagesModule,
+    InputModule,
     CardModule,
+    SelectModule,
     RouterModule.forChild([
       {
           path: '', component: HomeComponent

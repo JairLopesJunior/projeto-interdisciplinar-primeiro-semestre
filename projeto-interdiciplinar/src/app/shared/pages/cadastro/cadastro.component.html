@@ -5,78 +5,63 @@
 
 <form style="margin-bottom: 5rem;" class="mt-3">
     <div class="row mb-3">
-
         <div class="col">
-            <label for="inputEmail4">Nome *</label>    
-            <input type="text" class="form-control">
+            <app-input [valor]="nome"></app-input>
         </div>
 
         <div class="col">
-            <label for="inputEmail4">Email *</label>    
-            <input type="text" class="form-control">
+            <app-input [valor]="email"></app-input>
         </div>
 
     </div>
 
     <div class="row mb-3">
-        <div class="col">
-            <label for="inputEmail4">Telefone</label>    
-            <input type="text" class="form-control">
-        </div>
-        <div class="col">
-            <label for="inputEmail4">Profissão</label>    
-            <input type="text" class="form-control">
-        </div>
-    </div>
 
-    <div class="row mb-3">
         <div class="col">
-            <label for="inputEmail4">Título</label>    
-            <input type="text" class="form-control">
+            <app-input [valor]="telefone"></app-input>
         </div>
+
         <div class="col">
-            <label for="inputEmail4">Descrição</label>    
-            <input type="text" class="form-control">
+            <app-input [valor]="profissao"></app-input>
         </div>
+
     </div>
 
     <div class="row mb-3">
 
+        <div class="col">
+            <app-input [valor]="titulo"></app-input>
+        </div>
+
+        <div class="col">
+            <app-input [valor]="descricao"></app-input>
+        </div>
+
+    </div>
+
+    <div class="row mb-3">
+
         <div class="form-group col-md-4">
-            <label for="inputEmail4">CEP</label>    
-            <input type="text" class="form-control">
+            <app-input [valor]="cep"></app-input>
         </div>
 
         <div class="form-group col-md-4">
-            <label for="inputState">Estado</label>
-            <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-            </select>
+            <app-select [titulo]="estado"></app-select>
         </div>
 
         <div class="form-group col-md-4">
-            <label for="inputState">Cidade</label>
-            <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-            </select>
+            <app-select [titulo]="cidade"></app-select>
         </div>
     </div>
 
     <div class="row mb-3">
 
         <div class="form-group col-md-4">
-            <label for="inputEmail4">Endereço</label>    
-            <input type="text" class="form-control">
+            <app-input [valor]="endereco"></app-input>
         </div>
 
         <div class="form-group col-md-4">
-            <label for="inputState">Tipo da Postagem</label>
-            <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-            </select>
+            <app-select [titulo]="tipoPostagem"></app-select>
         </div>
 
         <div class="form-group col-md-4 mt-4">
