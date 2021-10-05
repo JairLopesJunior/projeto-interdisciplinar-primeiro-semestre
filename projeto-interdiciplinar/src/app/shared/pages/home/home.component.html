@@ -1,4 +1,6 @@
-<div class="container mt-5" style="max-width: 100vh;">
+<div class="container mt-5" style="max-width: 60vw;">
+
+  <!-- Texto -->
   <div class="row d-flex justify-content-center">
     <p>
       Lorem ipsum luctus est ultrices maecenas laoreet, lacus diam erat sociosqu libero 
@@ -8,20 +10,23 @@
     </p>
   </div>
 
+  <!-- Button -->
   <div class="col text-center mb-5">
     <button [routerLink]="['/perfil']" class="btn btn-primary" style="background-color: #00B2FF; border-color: #00B2FF; border-radius: 10rem;">
       CADASTRE-SE
     </button>
   </div>
-</div>
 
-<div class="row" style="margin-bottom: 5rem;">
-  <div class="col-sm-4 mb-3" *ngFor="let perfil of perfis">
-    <app-card [descricao]="perfil.descricao" 
-              [titulo]="perfil.titulo"
-              [imagem]="perfil.imagem">
-    </app-card>
+  <!-- Cards -->
+  <div class="row" style="margin-bottom: 5rem;">
+    <div class="col-sm-4 mb-3" *ngFor="let perfil of perfis">
+      <app-card [descricao]="perfil.descricao" 
+                [titulo]="perfil.titulo"
+                [imagem]="perfil.imagem">
+      </app-card>
+    </div>
   </div>
 </div>
+
 
 

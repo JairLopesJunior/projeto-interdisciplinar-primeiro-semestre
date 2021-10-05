@@ -19,22 +19,22 @@ export class HomeComponent implements OnInit {
   perfis = [
     {
       imagem: 'assets/imagem.png',
-      descricao: 'Teste1',
+      descricao: 'Lorem ipsum luctus est ultrices maecenas laoreet, lacus diam erat sociosqu libero dictum senectus...',
       titulo: 'titulo1'
     },
     {
       imagem: 'assets/imagem.png',
-      descricao: 'Teste2',
+      descricao: 'Lorem ipsum luctus est ultrices maecenas laoreet, lacus diam erat sociosqu libero dictum senectus...',
       titulo: 'titulo2'
     },
     {
       imagem: 'assets/imagem.png',
-      descricao: 'Teste3',
+      descricao: 'Lorem ipsum luctus est ultrices maecenas laoreet, lacus diam erat sociosqu libero dictum senectus...',
       titulo: 'titulo3'
     },
     {
       imagem: 'assets/imagem.png',
-      descricao: 'Teste4',
+      descricao: 'Lorem ipsum luctus est ultrices maecenas laoreet, lacus diam erat sociosqu libero dictum senectus...',
       titulo: 'titulo4'
     }
   ]
