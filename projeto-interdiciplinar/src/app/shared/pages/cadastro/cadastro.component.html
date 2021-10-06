@@ -3,14 +3,14 @@
     pessoas.
 </h4>
 
-<form style="margin-bottom: 5rem;" class="mt-3">
+<form [formGroup]="formGroup" style="margin-bottom: 5rem;" class="mt-3">
     <div class="row mb-3">
         <div class="col">
-            <app-input [valor]="nome"></app-input>
+            <app-input titulo="Nome *" controlName="nome"></app-input>
         </div>
 
         <div class="col">
-            <app-input [valor]="email"></app-input>
+            <app-input titulo="Email *" controlName="email"></app-input>
         </div>
 
     </div>
@@ -18,11 +18,11 @@
     <div class="row mb-3">
 
         <div class="col">
-            <app-input [valor]="telefone"></app-input>
+            <app-input titulo="Telefone" controlName="telefone"></app-input>
         </div>
 
         <div class="col">
-            <app-input [valor]="profissao"></app-input>
+            <app-input titulo="Profissao" controlName="profissao"></app-input>
         </div>
 
     </div>
@@ -30,11 +30,11 @@
     <div class="row mb-3">
 
         <div class="col">
-            <app-input [valor]="titulo"></app-input>
+            <app-input titulo="Titulo" controlName=""></app-input>
         </div>
 
         <div class="col">
-            <app-input [valor]="descricao"></app-input>
+            <app-input titulo="Descricao" controlName="descricao"></app-input>
         </div>
 
     </div>
@@ -42,32 +42,35 @@
     <div class="row mb-3">
 
         <div class="form-group col-md-4">
-            <app-input [valor]="cep"></app-input>
+            <app-input titulo="CEP" controlName="cep"></app-input>
         </div>
 
         <div class="form-group col-md-4">
-            <app-select [titulo]="estado"></app-select>
+            <app-select titulo="Estado"></app-select>
         </div>
 
         <div class="form-group col-md-4">
-            <app-select [titulo]="cidade"></app-select>
+            <app-select titulo="Cidade"></app-select>
         </div>
     </div>
 
     <div class="row mb-3">
 
         <div class="form-group col-md-4">
-            <app-input [valor]="endereco"></app-input>
+            <app-input titulo="Endereco" controlName="endereco"></app-input>
         </div>
 
         <div class="form-group col-md-4">
-            <app-select [titulo]="tipoPostagem"></app-select>
+            <app-select titulo="Tipo da Postagem" controlName="tipoPostagem"></app-select>
         </div>
 
         <div class="form-group col-md-4 mt-4">
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
         </div>
 
+    </div>
+    <div>
+        <button class="btn btn-primary" [disabled]="!formGroup.valid">Salvar</button>
     </div>
 
 </form>

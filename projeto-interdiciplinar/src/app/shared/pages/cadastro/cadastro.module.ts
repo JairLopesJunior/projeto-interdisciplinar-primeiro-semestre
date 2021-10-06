@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CadastroComponent } from './cadastro.component';
 
 import { InputModule } from '../../components/input/input.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { InputModule } from '../../components/input/input.module';
   imports: [
     CommonModule,
     InputModule,
-    SelectModule
+    SelectModule,
+    ReactiveFormsModule
   ],
   exports: [
     CadastroComponent
