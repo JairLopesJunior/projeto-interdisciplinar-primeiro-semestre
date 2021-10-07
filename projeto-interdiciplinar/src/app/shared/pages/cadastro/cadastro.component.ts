@@ -8,7 +8,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class CadastroComponent implements OnInit {
 
-  formGroup: FormGroup;
+  cadastroCliente: FormGroup;
 
 //  nome: string = 'Nome';
 //  email: string = 'Email';
@@ -32,11 +32,64 @@ export class CadastroComponent implements OnInit {
   }
 
   formularioCliente() {
-    this.formGroup = this.fb.group({
+    this.cadastroCliente = this.fb.group({
       nome: ['', Validators.compose([
           Validators.required,
-          Validators.minLength(3),
           Validators.maxLength(100)
+        ])
+      ],
+      email: ['', Validators.compose([
+          Validators.required,
+          Validators.email
+        ])
+      ],
+      telefone: ['', Validators.compose([
+          Validators.required,
+          Validators.maxLength(11),
+          Validators.minLength(11)
+        ])
+      ],
+      profissao: ['', Validators.compose([
+          Validators.required,
+          Validators.maxLength(100)
+        ])
+      ],
+      titulo: ['', Validators.compose([
+          Validators.required,
+          Validators.maxLength(100)
+        ])
+      ],
+      descrição: ['', Validators.compose([
+          Validators.required,
+          Validators.maxLength(100)
+        ])
+      ],
+      cep: ['', Validators.compose([
+          Validators.required,
+          Validators.maxLength(8),
+          Validators.minLength(8)
+        ])
+      ],
+      estado: ['', Validators.compose([
+          Validators.required
+        ])
+      ],
+      cidade: ['', Validators.compose([
+          Validators.required
+        ])
+      ],
+      endereco: ['', Validators.compose([
+          Validators.required,
+          Validators.maxLength(100)
+        ])
+      ],
+      tipoPostagem: ['', Validators.compose([
+          Validators.required,
+          Validators.maxLength(100)
+        ])
+      ],
+      inputImagem: ['', Validators.compose([
+          Validators.required
         ])
       ]
     });
