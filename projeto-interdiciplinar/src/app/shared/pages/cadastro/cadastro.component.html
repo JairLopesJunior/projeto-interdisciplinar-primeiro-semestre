@@ -1,0 +1,168 @@
+<h4>
+    Conecte-se a outras<br>
+    pessoas.
+</h4>
+
+<form [formGroup]="cadastroCliente" style="margin-bottom: 5rem;" class="mt-3">
+    
+    <div class="row mb-3">
+        <div class="col">
+            <div class="form-group" [ngClass]="aplicaCssErro('nome')">
+                <label for="inputState">Nome</label>
+                <input type="text"
+                        class="form-control"
+                        formControlName="nome"
+                        id="nome">
+
+                <app-campo-control-erro 
+                    [mostrarErro]="verificaValidTouched('nome')" 
+                    msgErro="Nome é obrigatório.">
+                </app-campo-control-erro>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="form-group" [ngClass]="aplicaCssErro('email')">
+                <label for="inputState">Email</label>
+                <input  type="text"
+                        class="form-control"
+                        formControlName="email"
+                        id="email">
+
+                <app-campo-control-erro 
+                    [mostrarErro]="verificaValidTouched('email')" 
+                    msgErro="Email é obrigatório.">
+                </app-campo-control-erro>
+            </div>
+        </div>
+    </div> 
+
+    <div class="row mb-3">
+        <div class="col">
+            <div class="form-group" [ngClass]="aplicaCssErro('telefone')">
+                <label for="inputState">Telefone</label>
+                <input  type="text"
+                        class="form-control"
+                        formControlName="telefone"
+                        id="telefone">
+
+                <app-campo-control-erro 
+                    [mostrarErro]="verificaValidTouched('telefone')" 
+                    msgErro="Telefone é obrigatório.">
+                </app-campo-control-erro>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="col">
+                <div class="form-group" [ngClass]="aplicaCssErro('profissao')">
+                    <label for="inputState">Profissão</label>
+                    <input  type="text"
+                            class="form-control"
+                            formControlName="profissao"
+                            id="profissao">
+
+                    <app-campo-control-erro 
+                        [mostrarErro]="verificaValidTouched('profissao')" 
+                        msgErro="Profissão é obrigatório.">
+                    </app-campo-control-erro>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">  
+        <div class="col">
+            <div class="form-group" [ngClass]="aplicaCssErro('titulo')">
+                <label for="inputState">Título</label>
+                <input  type="text"
+                        class="form-control"
+                        formControlName="titulo"
+                        id="titulo">
+
+                <app-campo-control-erro 
+                    [mostrarErro]="verificaValidTouched('titulo')" 
+                    msgErro="Título é obrigatório.">
+                </app-campo-control-erro>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="form-group" [ngClass]="aplicaCssErro('descricao')">
+                <label for="inputState">Descriçao</label>
+                <input  type="text"
+                        class="form-control"
+                        formControlName="descricao"
+                        id="descricao">
+
+                <app-campo-control-erro 
+                    [mostrarErro]="verificaValidTouched('descricao')" 
+                    msgErro="Descrição é obrigatório.">
+                </app-campo-control-erro>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="form-group col-md-4">
+            <div class="form-group" [ngClass]="aplicaCssErro('cep')">
+                <label for="inputState">CEP</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group col-md-4">
+            <div class="form-group" [ngClass]="aplicaCssErro('estado')">
+                <label for="inputState">Estado</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group col-md-4">
+            <div class="form-group" [ngClass]="aplicaCssErro('cidade')">
+                <label for="inputState">Cidade</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="form-group col-md-4">
+            <div class="form-group" [ngClass]="aplicaCssErro('endereco')">
+                <label for="inputState">Endereço</label>
+                <input  type="text"
+                        class="form-control"
+                        formControlName="endereco"
+                        id="endereco">
+            </div>
+        </div>
+
+        <div class="form-group col-md-4">
+            <div class="form-group" [ngClass]="aplicaCssErro('tipoPostagem')">
+                <label for="inputState">Cidade</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group col-md-4 mt-4">
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+    </div>
+    
+    <div>
+        <button class="btn btn-primary" [disabled]="!cadastroCliente.valid">Salvar</button>
+    </div>
+
+</form>
