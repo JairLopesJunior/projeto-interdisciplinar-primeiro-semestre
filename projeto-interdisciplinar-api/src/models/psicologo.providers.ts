@@ -1,4 +1,5 @@
-/*import { Connection } from 'typeorm';
+import { Connection } from 'typeorm';
+import { Psicologo } from './psicologo.entity';
 
 export const psicologoProviders = [
     {
@@ -6,4 +7,4 @@ export const psicologoProviders = [
         useFactory: (connection: Connection) => connection.getRepository(Psicologo),
         inject: ['DATABASE_CONNECTION'],
     },
-];*/
+];

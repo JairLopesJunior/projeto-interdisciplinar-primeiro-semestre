@@ -1,4 +1,5 @@
-/*import { Connection } from 'typeorm';
+import { Usuario } from './usuario.entity';
+import { Connection } from 'typeorm';
 
 export const usuarioProviders = [
     {
@@ -6,4 +7,4 @@ export const usuarioProviders = [
         useFactory: (connection: Connection) => connection.getRepository(Usuario),
         inject: ['DATABASE_CONNECTION'],
     },
-];*/
+];
