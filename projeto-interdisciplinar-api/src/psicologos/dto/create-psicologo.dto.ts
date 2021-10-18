@@ -10,5 +10,5 @@ export class CreatePsicologoDto {
     estado!: string;
     cidade!: string;
     sobreMim!: string;
-    imagem!: string;
+    imagem?: string;
 }

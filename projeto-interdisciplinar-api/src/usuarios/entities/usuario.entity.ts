@@ -6,25 +6,25 @@ export class Usuario {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({ length: 120 })
+    @Column({ length: 120, nullable: false })
     nome: string;
 
-    @Column({ length: 60 })
+    @Column({ length: 60, nullable: false })
     profissao: string;
 
     @Column("text")
     sobreMim: string;
 
-    @Column("text")
+    @Column("text", { nullable: false })
     relato: string;
 
-    @Column()
+    @Column({ nullable: false })
     isAnonimo: boolean;
 
-    @Column({ length: 20 })
+    @Column({ length: 20, nullable: false })
     estado: string;
 
-    @Column({ length: 120 })
+    @Column({ length: 120, nullable: false })
     cidade: string;
 
     @Column("text")

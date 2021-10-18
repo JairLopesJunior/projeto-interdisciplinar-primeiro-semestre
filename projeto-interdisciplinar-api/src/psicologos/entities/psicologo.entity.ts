@@ -6,34 +6,34 @@ export class Psicologo {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({ length: 120 })
+    @Column({ length: 120, nullable: false })
     nome: string;
 
-    @Column({ length: 50 })
+    @Column({ length: 50, nullable: false })
     email: string;
 
-    @Column({ length: 15 })
+    @Column({ length: 15, nullable: false })
     telefone: string;
 
-    @Column({ length: 6 })
+    @Column({ length: 6, nullable: false })
     crp: number;
 
-    @Column()
+    @Column({ nullable: false })
     preco: number;
 
-    @Column("text")
+    @Column("text", { nullable: false })
     experiencia: string;
 
     @Column({ length: 80 })
     facebook: string;
 
-    @Column({ length: 30 })
+    @Column({ length: 30, nullable: false })
     estado: string;
 
-    @Column({ length: 50 })
+    @Column({ length: 50, nullable: false })
     cidade: string;
 
-    @Column("text")
+    @Column("text" { nullable: false })
     sobreMim: string;
 
     @Column("text")
