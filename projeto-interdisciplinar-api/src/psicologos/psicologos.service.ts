@@ -1,19 +1,25 @@
+import { InjectRepository } from '@nestjs/typeorm';
 import { Injectable } from '@nestjs/common';
+import { Repository } from 'typeorm';
 import { CreatePsicologoDto } from './dto/create-psicologo.dto';
+import { Psicologo } from './entities/psicologo.entity';
 
 @Injectable()
 export class PsicologosService {
 
+  constructor( @InjectRepository(Psicologo) private readonly repository: Repository<Psicologo> ) {}
+
   create(createPsicologoDto: CreatePsicologoDto) {
-    return 'This action adds a new psicologo';
+    const psicologo = this.repository.create(createPsicologoDto);
+    return this.repository.save(psicologo);
   }
 
   findAll() {
-    return `This action returns all psicologos`;
+    return this.repository.find();
   }
 
   findOne(id: string) {
-    return `This action returns a #${id} psicologo`;
+    return this.repository.findOne(id);
   }
 
 }
