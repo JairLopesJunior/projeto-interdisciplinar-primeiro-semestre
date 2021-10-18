@@ -19,16 +19,7 @@ export class PsicologosController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.psicologosService.findOne(+id);
+    return this.psicologosService.findOne(id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updatePsicologoDto: UpdatePsicologoDto) {
-    return this.psicologosService.update(+id, updatePsicologoDto);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.psicologosService.remove(+id);
-  }
 }

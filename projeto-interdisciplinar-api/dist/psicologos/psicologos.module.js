@@ -6,20 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppModule = void 0;
+exports.PsicologosModule = void 0;
 const common_1 = require("@nestjs/common");
-const app_controller_1 = require("./app.controller");
-const app_service_1 = require("./app.service");
-const psicologos_module_1 = require("./psicologos/psicologos.module");
-const usuarios_module_1 = require("./usuarios/usuarios.module");
-let AppModule = class AppModule {
+const psicologos_service_1 = require("./psicologos.service");
+const psicologos_controller_1 = require("./psicologos.controller");
+let PsicologosModule = class PsicologosModule {
 };
-AppModule = __decorate([
+PsicologosModule = __decorate([
     (0, common_1.Module)({
-        imports: [psicologos_module_1.PsicologosModule, usuarios_module_1.UsuariosModule],
-        controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        controllers: [psicologos_controller_1.PsicologosController],
+        providers: [psicologos_service_1.PsicologosService]
     })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], PsicologosModule);
+exports.PsicologosModule = PsicologosModule;
+//# sourceMappingURL=psicologos.module.js.map

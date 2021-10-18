@@ -24,7 +24,7 @@ export class Psicologo {
     @Column("text", { nullable: false })
     experiencia: string;
 
-    @Column({ length: 80 })
+    @Column()
     facebook: string;
 
     @Column({ length: 30, nullable: false })
@@ -33,7 +33,7 @@ export class Psicologo {
     @Column({ length: 50, nullable: false })
     cidade: string;
 
-    @Column("text" { nullable: false })
+    @Column("text", { nullable: false })
     sobreMim: string;
 
     @Column("text")
