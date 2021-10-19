@@ -2,7 +2,6 @@ export declare class CreatePsicologoDto {
     nome: string;
     email: string;
     telefone: string;
-    crp: number;
     preco: number;
     experiencia: string;
     facebook?: string;

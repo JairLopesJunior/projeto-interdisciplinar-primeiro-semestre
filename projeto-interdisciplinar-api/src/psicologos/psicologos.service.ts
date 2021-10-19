@@ -1,5 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { Repository } from 'typeorm';
+import { validate } from 'class-validator';
+import { getRepository, Repository } from 'typeorm';
 import { CreatePsicologoDto } from './dto/create-psicologo.dto';
 import { Psicologo } from './entities/psicologo.entity';
 
