@@ -1,24 +1,24 @@
-import { IsEmail, IsNotEmpty, IsOptional, IsPhoneNumber, IsString, MinLength } from 'class-validator';
+import { IsEmail, IsNotEmpty, IsOptional, IsPhoneNumber, IsString, MaxLength } from 'class-validator';
 
 export class CreatePsicologoDto {
 
     @IsString({ message: 'Informe um nome válido!' })
-    @IsNotEmpty({ message: 'O campo nome precisa ser fornecido!' })
-    @MinLength(120)
+    @IsNotEmpty()
+    @MaxLength(120)
     nome!: string;
 
     @IsString({ message: 'Informe um email válido!' })
     @IsEmail()
-    @MinLength(50)
+    @MaxLength(50)
     email!: string;
 
     @IsString({ message: 'Informe um telefone válido!' })
     @IsPhoneNumber()
-    @MinLength(15)
+    @MaxLength(15)
     telefone!: string;
 
     @IsString({ message: 'Informe um crp válido!' })
-    @MinLength(6)
+    @MaxLength(6)
     crp!: number;
 
     preco!: number;
@@ -32,12 +32,12 @@ export class CreatePsicologoDto {
     facebook?: string;
 
     @IsString({ message: 'Informe um estado válido!' })
-    @MinLength(30)
+    @MaxLength(30)
     @IsNotEmpty({ message: 'O campo estado precisa ser fornecido!' })
     estado!: string;
 
     @IsString({ message: 'Informe uma cidade válido!' })
-    @MinLength(50)
+    @MaxLength(50)
     @IsNotEmpty({ message: 'O campo cidade precisa ser fornecido!' })
     cidade!: string;
 

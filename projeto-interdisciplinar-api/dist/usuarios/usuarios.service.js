@@ -18,12 +18,6 @@ let UsuariosService = class UsuariosService {
     findOne(id) {
         return `This action returns a #${id} usuario`;
     }
-    update(id, updateUsuarioDto) {
-        return `This action updates a #${id} usuario`;
-    }
-    remove(id) {
-        return `This action removes a #${id} usuario`;
-    }
 };
 UsuariosService = __decorate([
     (0, common_1.Injectable)()

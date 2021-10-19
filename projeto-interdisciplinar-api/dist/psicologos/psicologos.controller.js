@@ -16,7 +16,6 @@ exports.PsicologosController = void 0;
 const common_1 = require("@nestjs/common");
 const psicologos_service_1 = require("./psicologos.service");
 const create_psicologo_dto_1 = require("./dto/create-psicologo.dto");
-const update_psicologo_dto_1 = require("./dto/update-psicologo.dto");
 let PsicologosController = class PsicologosController {
     constructor(psicologosService) {
         this.psicologosService = psicologosService;
@@ -28,13 +27,7 @@ let PsicologosController = class PsicologosController {
         return this.psicologosService.findAll();
     }
     findOne(id) {
-        return this.psicologosService.findOne(+id);
-    }
-    update(id, updatePsicologoDto) {
-        return this.psicologosService.update(+id, updatePsicologoDto);
-    }
-    remove(id) {
-        return this.psicologosService.remove(+id);
+        return this.psicologosService.findOne(id);
     }
 };
 __decorate([
@@ -57,21 +50,6 @@ __decorate([
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], PsicologosController.prototype, "findOne", null);
-__decorate([
-    (0, common_1.Patch)(':id'),
-    __param(0, (0, common_1.Param)('id')),
-    __param(1, (0, common_1.Body)()),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, update_psicologo_dto_1.UpdatePsicologoDto]),
-    __metadata("design:returntype", void 0)
-], PsicologosController.prototype, "update", null);
-__decorate([
-    (0, common_1.Delete)(':id'),
-    __param(0, (0, common_1.Param)('id')),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String]),
-    __metadata("design:returntype", void 0)
-], PsicologosController.prototype, "remove", null);
 PsicologosController = __decorate([
     (0, common_1.Controller)('psicologos'),
     __metadata("design:paramtypes", [psicologos_service_1.PsicologosService])

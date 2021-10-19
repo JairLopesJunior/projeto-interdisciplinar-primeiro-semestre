@@ -15,7 +15,7 @@ export class Psicologo {
     @Column({ length: 15, nullable: false })
     telefone: string;
 
-    @Column({ length: 6, nullable: false })
+    @Column({ nullable: false })
     crp: number;
 
     @Column({ nullable: false })

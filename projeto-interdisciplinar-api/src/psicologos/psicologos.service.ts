@@ -1,5 +1,4 @@
-import { InjectRepository } from '@nestjs/typeorm';
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { CreatePsicologoDto } from './dto/create-psicologo.dto';
 import { Psicologo } from './entities/psicologo.entity';
@@ -7,7 +6,10 @@ import { Psicologo } from './entities/psicologo.entity';
 @Injectable()
 export class PsicologosService {
 
-  constructor( @InjectRepository(Psicologo) private readonly repository: Repository<Psicologo> ) {}
+  constructor(
+    @Inject('PSICOLOGO_REPOSITORY')
+    private repository: Repository<Psicologo>,
+  ) {}
 
   create(createPsicologoDto: CreatePsicologoDto) {
     const psicologo = this.repository.create(createPsicologoDto);

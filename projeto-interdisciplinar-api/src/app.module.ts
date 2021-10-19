@@ -5,7 +5,10 @@ import { PsicologosModule } from './psicologos/psicologos.module';
 import { UsuariosModule } from './usuarios/usuarios.module';
 
 @Module({
-  imports: [PsicologosModule, UsuariosModule],
+  imports: [
+    PsicologosModule, 
+    UsuariosModule
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

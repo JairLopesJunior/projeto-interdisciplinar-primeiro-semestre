@@ -1,9 +1,10 @@
+import { Repository } from 'typeorm';
 import { CreatePsicologoDto } from './dto/create-psicologo.dto';
-import { UpdatePsicologoDto } from './dto/update-psicologo.dto';
+import { Psicologo } from './entities/psicologo.entity';
 export declare class PsicologosService {
-    create(createPsicologoDto: CreatePsicologoDto): string;
-    findAll(): string;
-    findOne(id: number): string;
-    update(id: number, updatePsicologoDto: UpdatePsicologoDto): string;
-    remove(id: number): string;
+    private repository;
+    constructor(repository: Repository<Psicologo>);
+    create(createPsicologoDto: CreatePsicologoDto): Promise<Psicologo>;
+    findAll(): Promise<Psicologo[]>;
+    findOne(id: string): Promise<Psicologo>;
 }

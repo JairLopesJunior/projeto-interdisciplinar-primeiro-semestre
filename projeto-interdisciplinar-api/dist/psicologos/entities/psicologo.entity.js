@@ -30,7 +30,7 @@ __decorate([
     __metadata("design:type", String)
 ], Psicologo.prototype, "telefone", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ length: 6, nullable: false }),
+    (0, typeorm_1.Column)({ nullable: false }),
     __metadata("design:type", Number)
 ], Psicologo.prototype, "crp", void 0);
 __decorate([
@@ -42,7 +42,7 @@ __decorate([
     __metadata("design:type", String)
 ], Psicologo.prototype, "experiencia", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ length: 80 }),
+    (0, typeorm_1.Column)(),
     __metadata("design:type", String)
 ], Psicologo.prototype, "facebook", void 0);
 __decorate([
