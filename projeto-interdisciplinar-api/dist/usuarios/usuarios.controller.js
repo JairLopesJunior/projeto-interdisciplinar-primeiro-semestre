@@ -27,7 +27,7 @@ let UsuariosController = class UsuariosController {
         return this.usuariosService.findAll();
     }
     findOne(id) {
-        return this.usuariosService.findOne(+id);
+        return this.usuariosService.findOne(id);
     }
 };
 __decorate([

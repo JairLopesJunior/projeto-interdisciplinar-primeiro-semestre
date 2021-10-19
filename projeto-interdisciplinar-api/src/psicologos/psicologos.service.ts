@@ -12,6 +12,7 @@ export class PsicologosService {
   ) {}
 
   create(createPsicologoDto: CreatePsicologoDto) {
+
     const psicologo = this.repository.create(createPsicologoDto);
     return this.repository.save(psicologo);
   }

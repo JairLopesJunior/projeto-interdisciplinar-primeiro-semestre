@@ -16,24 +16,24 @@ class CreatePsicologoDto {
 __decorate([
     (0, class_validator_1.IsString)({ message: 'Informe um nome válido!' }),
     (0, class_validator_1.IsNotEmpty)({ message: 'O campo nome precisa ser fornecido!' }),
-    (0, class_validator_1.MinLength)(120),
+    (0, class_validator_1.MaxLength)(120),
     __metadata("design:type", String)
 ], CreatePsicologoDto.prototype, "nome", void 0);
 __decorate([
     (0, class_validator_1.IsString)({ message: 'Informe um email válido!' }),
     (0, class_validator_1.IsEmail)(),
-    (0, class_validator_1.MinLength)(50),
+    (0, class_validator_1.MaxLength)(50),
     __metadata("design:type", String)
 ], CreatePsicologoDto.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsString)({ message: 'Informe um telefone válido!' }),
     (0, class_validator_1.IsPhoneNumber)(),
-    (0, class_validator_1.MinLength)(15),
+    (0, class_validator_1.MaxLength)(15),
     __metadata("design:type", String)
 ], CreatePsicologoDto.prototype, "telefone", void 0);
 __decorate([
     (0, class_validator_1.IsString)({ message: 'Informe um crp válido!' }),
-    (0, class_validator_1.MinLength)(6),
+    (0, class_validator_1.MaxLength)(6),
     __metadata("design:type", Number)
 ], CreatePsicologoDto.prototype, "crp", void 0);
 __decorate([
@@ -48,13 +48,13 @@ __decorate([
 ], CreatePsicologoDto.prototype, "facebook", void 0);
 __decorate([
     (0, class_validator_1.IsString)({ message: 'Informe um estado válido!' }),
-    (0, class_validator_1.MinLength)(30),
+    (0, class_validator_1.MaxLength)(30),
     (0, class_validator_1.IsNotEmpty)({ message: 'O campo estado precisa ser fornecido!' }),
     __metadata("design:type", String)
 ], CreatePsicologoDto.prototype, "estado", void 0);
 __decorate([
     (0, class_validator_1.IsString)({ message: 'Informe uma cidade válido!' }),
-    (0, class_validator_1.MinLength)(50),
+    (0, class_validator_1.MaxLength)(50),
     (0, class_validator_1.IsNotEmpty)({ message: 'O campo cidade precisa ser fornecido!' }),
     __metadata("design:type", String)
 ], CreatePsicologoDto.prototype, "cidade", void 0);

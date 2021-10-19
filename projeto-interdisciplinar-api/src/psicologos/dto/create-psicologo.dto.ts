@@ -3,7 +3,7 @@ import { IsEmail, IsNotEmpty, IsOptional, IsPhoneNumber, IsString, MaxLength } f
 export class CreatePsicologoDto {
 
     @IsString({ message: 'Informe um nome válido!' })
-    @IsNotEmpty()
+    @IsNotEmpty({ message: 'O campo nome precisa ser fornecido!' })
     @MaxLength(120)
     nome!: string;
 
