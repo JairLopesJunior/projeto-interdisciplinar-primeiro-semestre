@@ -20,9 +20,9 @@
   <!-- Cards -->
   <div class="row" style="margin-bottom: 5rem;">
     <div class="col-sm-4 mb-3" *ngFor="let usuario of usuarios">
-      <app-card [descricao]="perfil.descricao" 
-                [titulo]="perfil.titulo"
-                [imagem]="perfil.imagem">
+      <app-card [relato]="usuario.relato" 
+                [nome]="usuario.nome"
+                [imagem]="usuario.imagem">
       </app-card>
     </div>
   </div>

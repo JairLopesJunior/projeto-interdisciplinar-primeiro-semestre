@@ -17,14 +17,16 @@ export class HomeComponent implements OnInit {
   constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
+    this.retrieveAll();
   }
 
   retrieveAll(): void{
     this.usuarioService.retriveAll().subscribe({
         next: usuarios => {
+          console.log(usuarios)
             this.usuarios = usuarios;
         },
-        error: err => alert('Error: ' + err);
+        error: err => alert('Error: ' + err)
     })
   }
 
