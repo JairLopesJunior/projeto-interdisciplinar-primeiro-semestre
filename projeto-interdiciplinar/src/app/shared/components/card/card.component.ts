@@ -32,11 +32,11 @@ export class CardComponent implements OnInit {
     nomeArray[0] = nomeArray[0].toUpperCase();
     for(let i = 0; i < nomeArray.length; i++){
       if(nomeArray[i] === " "){
+        i++;
         nomeArray[i] = nomeArray[i].toUpperCase();
       }
     }
     this.nome = nomeArray.toString().split(',').join('');
-    console.log(this.nome)
   }
 
 }
