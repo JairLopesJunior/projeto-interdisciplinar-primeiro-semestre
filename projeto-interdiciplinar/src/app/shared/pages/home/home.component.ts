@@ -9,9 +9,6 @@ import { Usuario } from 'src/app/models/usuario';
 })
 export class HomeComponent implements OnInit {
 
-  teste: string = 'sdfsd';
-  titulo: string = 'Tittulo2';
-  imagem: string = 'assets/imagem.png';
   usuarios: Usuario[] = [];
 
   constructor(private usuarioService: UsuarioService) { }
