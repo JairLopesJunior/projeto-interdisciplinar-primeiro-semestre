@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { UsuarioService } from './usuario.service';
+import { Component, OnInit } from '@angular/core';
+import { Usuario } from 'src/app/models/usuario';
 
 @Component({
   selector: 'app-home',
@@ -10,10 +12,20 @@ export class HomeComponent implements OnInit {
   teste: string = 'sdfsd';
   titulo: string = 'Tittulo2';
   imagem: string = 'assets/imagem.png';
+  usuarios: Usuario[] = [];
 
-  constructor() { }
+  constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
+  }
+
+  retrieveAll(): void{
+    this.usuarioService.retriveAll().subscribe({
+        next: usuarios => {
+            this.usuarios = usuarios;
+        },
+        error: err => alert('Error: ' + err);
+    })
   }
 
   perfis = [
