@@ -1,4 +1,3 @@
-import { CampoControlErroModule } from './components/campo-control-erro/campo-control-erro.module';
 import { CardModule } from './components/card/card.module';
 import { PagesModule } from './pages/pages.module';
 import { NgModule } from '@angular/core';
@@ -11,6 +10,7 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SelectModule } from './components/select/select.module';
+import { CampoControlErroModule } from './components/campo-control-erro/campo-control-erro.module';
 
 
 @NgModule({
@@ -22,8 +22,8 @@ import { SelectModule } from './components/select/select.module';
     CommonModule,
     PagesModule,
     CardModule,
-    CampoControlErroModule,
     SelectModule,
+    CampoControlErroModule,
     RouterModule.forChild([
       {
           path: '', component: HomeComponent

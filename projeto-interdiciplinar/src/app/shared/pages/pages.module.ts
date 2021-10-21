@@ -1,3 +1,4 @@
+import { UsuarioModule } from './usuario/usuario.module';
 import { CadastroModule } from './cadastro/cadastro.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -15,6 +16,7 @@ import { HomeModule } from './home/home.module';
   imports: [
     CommonModule,
     CadastroModule,
+    UsuarioModule,
     HomeModule
   ],
   exports: [

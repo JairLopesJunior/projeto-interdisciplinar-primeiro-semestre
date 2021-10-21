@@ -1,10 +1,9 @@
-import { SelectModule } from './../../components/select/select.module';
+import { PsicologoComponent } from './../psicologo/psicologo.component';
+import { UsuarioComponent } from './../usuario/usuario.component';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CadastroComponent } from './cadastro.component';
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CampoControlErroModule } from '../../components/campo-control-erro/campo-control-erro.module';
 
 
 @NgModule({
@@ -13,10 +12,14 @@ import { CampoControlErroModule } from '../../components/campo-control-erro/camp
   ],
   imports: [
     CommonModule,
-    SelectModule,
-    FormsModule,
-    CampoControlErroModule,
-    ReactiveFormsModule
+    RouterModule.forChild([
+      {
+        path: 'cadastro/usuario', component: UsuarioComponent
+      },
+      {
+        path: 'cadastro/psicologo', component: PsicologoComponent
+      }
+    ])
   ],
   exports: [
     CadastroComponent
