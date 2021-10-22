@@ -18,12 +18,12 @@ export class UsuarioComponent implements OnInit {
     this.formularioCliente();
   }
 
-  salvarFormulario(): void {
+  onSubmit(): void {
     if(this.cadastroCliente.valid) {
       this.usuarioService.save(this.cadastroCliente.value).subscribe({
         next: usuario => alert("Salvo com sucesso."),
         error: err => alert('Error: ')
-    });
+      });
     }
   }
 

@@ -19,7 +19,7 @@ export class Usuario {
     relato: string;
 
     @Column({ nullable: false })
-    isAnonimo: boolean;
+    tipo: number;
 
     @Column({ length: 20, nullable: false })
     estado: string;

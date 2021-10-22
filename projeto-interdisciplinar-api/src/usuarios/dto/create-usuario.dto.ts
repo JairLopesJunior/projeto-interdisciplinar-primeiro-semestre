@@ -7,7 +7,7 @@ export class CreateUsuarioDto {
     profissao!: string;
     sobreMim?: string;
     relato!: string;
-    isAnonimo!: boolean;
+    tipo!: number;
     estado!: string;
     cidade!: string;
     imagem?: string;

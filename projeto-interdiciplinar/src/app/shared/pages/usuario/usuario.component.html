@@ -3,7 +3,7 @@
     experiências.
 </h4>
 
-<form [formGroup]="cadastroCliente" style="margin-bottom: 5rem;" class="mt-3">
+<form [formGroup]="cadastroCliente" style="margin-bottom: 5rem;" class="mt-3" (ngSubmit)="onSubmit()">
     {{cadastroCliente.invalid}}
     <div class="row mb-3">
         <div class="col">

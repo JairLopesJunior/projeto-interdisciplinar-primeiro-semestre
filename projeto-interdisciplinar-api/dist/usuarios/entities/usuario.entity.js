@@ -35,8 +35,8 @@ __decorate([
 ], Usuario.prototype, "relato", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: false }),
-    __metadata("design:type", Boolean)
-], Usuario.prototype, "isAnonimo", void 0);
+    __metadata("design:type", Number)
+], Usuario.prototype, "tipo", void 0);
 __decorate([
     (0, typeorm_1.Column)({ length: 20, nullable: false }),
     __metadata("design:type", String)
