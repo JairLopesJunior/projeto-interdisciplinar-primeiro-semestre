@@ -20,8 +20,7 @@ export class HomeComponent implements OnInit {
   retrieveAll(): void{
     this.usuarioService.retriveAll().subscribe({
         next: usuarios => {
-          console.log(usuarios)
-            this.usuarios = usuarios;
+          this.usuarios = usuarios;
         },
         error: err => alert('Error: ' + err)
     })

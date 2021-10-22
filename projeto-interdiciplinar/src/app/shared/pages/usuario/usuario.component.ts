@@ -1,3 +1,4 @@
+import { UsuarioService } from './../home/usuario.service';
 import { Validators, FormGroup, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,10 +11,20 @@ export class UsuarioComponent implements OnInit {
   
   cadastroCliente: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder,
+              private usuarioService: UsuarioService) {}
 
   ngOnInit(): void {
     this.formularioCliente();
+  }
+
+  salvarFormulario(): void {
+    if(this.cadastroCliente.valid) {
+      this.usuarioService.save(this.cadastroCliente.value).subscribe({
+        next: usuario => alert("Salvo com sucesso."),
+        error: err => alert('Error: ')
+    });
+    }
   }
 
   verificaValidTouched(campo: string) {
@@ -30,7 +41,7 @@ export class UsuarioComponent implements OnInit {
 
   formularioCliente() {
     this.cadastroCliente = this.fb.group({
-      nome: [null, Validators.compose([
+      nome: ['', Validators.compose([
           Validators.required,
           Validators.maxLength(100),
           Validators.minLength(2)
@@ -54,7 +65,7 @@ export class UsuarioComponent implements OnInit {
       tipo: ['', Validators.compose([
           Validators.required
         ])
-      ],
+      ]/*,
       estado: ['', Validators.compose([
           Validators.required
         ])
@@ -66,7 +77,7 @@ export class UsuarioComponent implements OnInit {
       imagem: ['', Validators.compose([
           Validators.required
         ])
-      ]
+      ]*/
     });
   }
 
