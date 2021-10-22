@@ -65,7 +65,7 @@ export class UsuarioComponent implements OnInit {
       tipo: ['', Validators.compose([
           Validators.required
         ])
-      ]/*,
+      ],
       estado: ['', Validators.compose([
           Validators.required
         ])
@@ -77,7 +77,7 @@ export class UsuarioComponent implements OnInit {
       imagem: ['', Validators.compose([
           Validators.required
         ])
-      ]*/
+      ]
     });
   }
 

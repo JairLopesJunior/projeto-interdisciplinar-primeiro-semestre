@@ -73,40 +73,60 @@
         <div class="form-group col-md-4">
             <div class="form-group" [ngClass]="aplicaCssErro('tipo')">
                 <label for="inputState">Tipo</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                <select id="inputState" class="form-control" formControlName="tipo">
+                    <option value="0" selected>Público</option>
+                    <option value="1">Anônimo</option>
                 </select>
             </div>
+
+            <app-campo-control-erro 
+                [mostrarErro]="verificaValidTouched('tipo')" 
+                msgErro="Tipo é obrigatório.">
+            </app-campo-control-erro>
         </div>
 
-    <!--    <div class="form-group col-md-4">
+        <div class="form-group col-md-4">
             <div class="form-group" [ngClass]="aplicaCssErro('estado')">
                 <label for="inputState">Estado</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" formControlName="estado">
                     <option selected>Choose...</option>
                     <option>...</option>
                 </select>
+
+                <app-campo-control-erro 
+                    [mostrarErro]="verificaValidTouched('estado')" 
+                    msgErro="Estado é obrigatório.">
+                </app-campo-control-erro>
             </div>
         </div>
 
         <div class="form-group col-md-4">
             <div class="form-group" [ngClass]="aplicaCssErro('cidade')">
                 <label for="inputState">Cidade</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" formControlName="cidade">
                     <option selected>Choose...</option>
                     <option>...</option>
                 </select>
+
+                <app-campo-control-erro 
+                    [mostrarErro]="verificaValidTouched('cidade')" 
+                    msgErro="Cidade é obrigatório.">
+                </app-campo-control-erro>
             </div>
-        </div> -->
+        </div>
     </div>
 
-  <!--  <div class="row mb-3">
+    <div class="row mb-3">
 
         <div class="form-group col-md-4 mt-4">
-            <input style="background-color: white;" type="file" class="form-control-file" id="exampleFormControlFile1">
+            <input style="background-color: white;" formControlName="imagem" type="file" class="form-control-file" id="exampleFormControlFile1">
         </div>
-    </div> -->
+
+        <app-campo-control-erro 
+            [mostrarErro]="verificaValidTouched('imagem')" 
+            msgErro="Imagem é obrigatório.">
+        </app-campo-control-erro>
+    </div> 
     
     <div>
         <button class="btn btn-primary" [disabled]="cadastroCliente.invalid">Salvar</button>
