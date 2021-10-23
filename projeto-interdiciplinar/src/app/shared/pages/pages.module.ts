@@ -7,13 +7,15 @@ import { ContatoComponent } from './contato/contato.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { HomeModule } from './home/home.module';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { PostagemComponent } from './postagem/postagem.component';
 
 
 @NgModule({
   declarations: [
     ContatoComponent,
     PerfilComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    PostagemComponent
   ],
   imports: [
     CommonModule,

@@ -11,6 +11,7 @@ import { ContatoComponent } from './pages/contato/contato.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SelectModule } from './components/select/select.module';
 import { CampoControlErroModule } from './components/campo-control-erro/campo-control-erro.module';
+import { PostagemComponent } from './pages/postagem/postagem.component';
 
 
 @NgModule({
@@ -30,6 +31,9 @@ import { CampoControlErroModule } from './components/campo-control-erro/campo-co
       },
       {
           path: 'home', component: HomeComponent
+      },
+      {
+        path: 'postagens', component: PostagemComponent
       },
       {
           path: 'cadastro', component: CadastroComponent

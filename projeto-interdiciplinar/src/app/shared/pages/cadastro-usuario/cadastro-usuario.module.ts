@@ -1,3 +1,4 @@
+import { UsuarioComponent } from './../usuario/usuario.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SelectModule } from '../../components/select/select.module';
@@ -20,7 +21,7 @@ import { CampoControlErroModule } from '../../components/campo-control-erro/camp
     CampoControlErroModule,
     RouterModule.forChild([
       {
-        path: 'usuario/:id', component: CadastroUsuarioComponent
+        path: 'usuario/:id', component: UsuarioComponent
       }
     ])
   ],

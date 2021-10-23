@@ -25,7 +25,7 @@ export class CadastroUsuarioComponent implements OnInit {
       this._usuarioService.save(this.cadastroCliente.value).subscribe({
         next: usuario => {
           alert("Salvo com sucesso.")
-          this._router.navigateByUrl('usuario/:id');
+          this._router.navigate([`usuario/${usuario.id}`]);
         },
         error: err => alert('Error: ')
       });
