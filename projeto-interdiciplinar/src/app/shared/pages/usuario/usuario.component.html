@@ -1,3 +1,37 @@
-<p>usuario works!</p>
+<div class="row">
 
-{{ usuario.estado }}
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+        <div class="row">
+
+            <div class="col-xs-8 col-sm-6 col-md-5 col-lg-3 circle">
+                <img src="{{ 'assets/imagem.png' }}">
+            </div>
+
+            <div class="col-xs-4 col-sm-6 col-md-7 col-lg-9">
+                <h3>{{ usuario.nome }}</h3>
+                <h5>{{ usuario.profissao }}</h5>
+                <h5>{{ usuario.cidade }}, {{ usuario.estado }} - Brasil</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="meu-hr mt-3">
+        <p>SOBRE MIM</p><hr>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            {{ usuario.sobreMim }}
+        </div>
+    </div>
+
+    <div class="meu-hr mt-3">
+        <p>RELATO DA EXPERIÊNCIA</p><hr>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            {{ usuario.relato }}
+        </div>
+    </div>
+</div>
