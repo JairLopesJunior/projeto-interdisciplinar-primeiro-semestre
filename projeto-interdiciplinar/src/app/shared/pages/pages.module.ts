@@ -4,17 +4,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ContatoComponent } from './contato/contato.component';
-import { PerfilComponent } from './perfil/perfil.component';
 import { HomeModule } from './home/home.module';
 import { UsuarioComponent } from './usuario/usuario.component';
-import { PostagemComponent } from './postagem/postagem.component';
 import { PostagemModule } from './postagem/postagem.module';
 
 
 @NgModule({
   declarations: [
     ContatoComponent,
-    PerfilComponent,
     UsuarioComponent
   ],
   imports: [
@@ -26,7 +23,6 @@ import { PostagemModule } from './postagem/postagem.module';
   ],
   exports: [
     ContatoComponent,
-    PerfilComponent
   ],
 })
 export class PagesModule { }

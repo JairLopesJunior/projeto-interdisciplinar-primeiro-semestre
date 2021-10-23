@@ -1,4 +1,3 @@
-import { PerfilComponent } from './../perfil/perfil.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -14,11 +13,7 @@ import { CardModule } from '../../components/card/card.module';
   imports: [
     CommonModule,
     CardModule,
-    RouterModule.forChild([
-      {
-          path: 'perfil', component: PerfilComponent
-      }
-    ])
+    RouterModule
   ],
   exports: [
     PostagemComponent
