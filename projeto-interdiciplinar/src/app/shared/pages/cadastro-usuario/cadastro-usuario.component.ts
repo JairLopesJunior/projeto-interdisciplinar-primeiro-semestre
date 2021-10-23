@@ -32,6 +32,10 @@ export class CadastroUsuarioComponent implements OnInit {
     }
   }
 
+  onFileChanges(file: any): void {
+    console.log(file)
+  }
+
   verificaValidTouched(campo: string) {
     return !this.cadastroCliente.get(campo)?.valid 
     && this.cadastroCliente.get(campo)?.touched;

@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CadastroUsuarioComponent } from './cadastro-usuario.component';
 import { CampoControlErroModule } from '../../components/campo-control-erro/campo-control-erro.module';
+import { AlifeFileToBase64Module } from 'alife-file-to-base64';
 
 
 
@@ -19,6 +20,7 @@ import { CampoControlErroModule } from '../../components/campo-control-erro/camp
     FormsModule,
     ReactiveFormsModule,
     CampoControlErroModule,
+    AlifeFileToBase64Module,
     RouterModule.forChild([
       {
         path: 'usuario/:id', component: UsuarioComponent

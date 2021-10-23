@@ -119,7 +119,7 @@
     <div class="row mb-3">
 
         <div class="form-group col-md-4 mt-4">
-            <input style="background-color: white;" formControlName="imagem" type="file" class="form-control-file" id="exampleFormControlFile1">
+            <input style="background-color: white;" formControlName="imagem" class="form-control-file" id="exampleFormControlFile1" type="file" alife-file-to-base64 (onFileChanged)="onFileChanges($event)"/>
         </div>
 
         <app-campo-control-erro 
