@@ -20,4 +20,8 @@ export class UsuarioService {
     return this.httpClient.post<Usuario>(`${this.usuarioUrl}`, usuario);
   }
 
+  retrieveById(id: number): Observable<Usuario> {
+    return this.httpClient.get<Usuario>(`${this.usuarioUrl}/${id}`);
+  }
+
 }
