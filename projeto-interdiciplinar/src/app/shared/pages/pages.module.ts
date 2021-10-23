@@ -8,20 +8,21 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { HomeModule } from './home/home.module';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { PostagemComponent } from './postagem/postagem.component';
+import { PostagemModule } from './postagem/postagem.module';
 
 
 @NgModule({
   declarations: [
     ContatoComponent,
     PerfilComponent,
-    UsuarioComponent,
-    PostagemComponent
+    UsuarioComponent
   ],
   imports: [
     CommonModule,
     CadastroModule,
     CadastroUsuarioModule,
-    HomeModule
+    HomeModule,
+    PostagemModule
   ],
   exports: [
     ContatoComponent,

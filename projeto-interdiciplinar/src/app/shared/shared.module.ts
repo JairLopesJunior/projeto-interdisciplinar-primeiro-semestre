@@ -33,7 +33,7 @@ import { PostagemComponent } from './pages/postagem/postagem.component';
           path: 'home', component: HomeComponent
       },
       {
-        path: 'postagens', component: PostagemComponent
+          path: 'usuarios', component: PostagemComponent
       },
       {
           path: 'cadastro', component: CadastroComponent

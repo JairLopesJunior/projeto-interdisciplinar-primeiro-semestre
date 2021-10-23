@@ -1,4 +1,3 @@
-<p>postagem works!</p>
 <div class="container mt-5" style="max-width: 60vw;">
 
     <!-- Texto -->
@@ -23,7 +22,8 @@
       <div class="col-sm-4 mb-3" *ngFor="let usuario of usuarios">
         <app-card [relato]="usuario.relato" 
                   [nome]="usuario.nome"
-                  [imagem]="usuario.imagem">
+                  [imagem]="usuario.imagem"
+                  [id]="usuario.id">
         </app-card>
       </div>
     </div>

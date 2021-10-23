@@ -10,6 +10,9 @@ export class CardComponent implements OnInit {
   @Input() nome: string = '';
   @Input() relato: string = '';
   @Input() imagem: string | undefined = '';
+  @Input() id: number = 0;
+
+  idUsuario = this.id;
 
   imagemPadrao: string | undefined;
 
