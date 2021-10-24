@@ -7,12 +7,14 @@ import { ContatoComponent } from './contato/contato.component';
 import { HomeModule } from './home/home.module';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { PostagemModule } from './postagem/postagem.module';
+import { CadastroPsicologoComponent } from './cadastro-psicologo/cadastro-psicologo.component';
 
 
 @NgModule({
   declarations: [
     ContatoComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    CadastroPsicologoComponent
   ],
   imports: [
     CommonModule,
