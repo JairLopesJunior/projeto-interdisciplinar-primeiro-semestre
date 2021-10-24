@@ -29,3 +29,14 @@
     
     </div>
 </div>
+
+<!-- Cards -->
+<div class="row" style="margin-bottom: 5rem;">
+    <div class="col-sm-4 mb-3" *ngFor="let psicologo of psicologos">
+        <app-card [relato]="psicologo.experiencia" 
+                [nome]="psicologo.nome"
+                [imagem]="psicologo.imagem"
+                [id]="psicologo.id">
+        </app-card>
+    </div>
+</div>
