@@ -1,0 +1,12 @@
+input {
+    border-top: none;
+    border-left: none; 
+    border-right: none;
+    border-color: #00B2FF;
+    border-radius: 0;
+}
+
+input:focus {
+    box-shadow: 0 3px 0 #00B2FF;
+    border: 0 none;
+}
