@@ -12,6 +12,8 @@ export class CadastroUsuarioComponent implements OnInit {
   
   cadastroCliente: FormGroup;
 
+  imagemBase64: string;
+
   constructor(private fb: FormBuilder,
               private _usuarioService: UsuarioService,
               private _router: Router) {}
@@ -27,13 +29,20 @@ export class CadastroUsuarioComponent implements OnInit {
           alert("Salvo com sucesso.")
           this._router.navigate([`usuario/${usuario.id}`]);
         },
-        error: err => alert('Error: ')
+        error: err => {
+          if(err.statusText === 'Payload Too Large') {
+            alert("Erro, imagem muito grande!!");
+          }else{
+            alert('Erro.');
+          }
+        }
       });
     }
   }
 
-  onFileChanges(file: any): void {
-    console.log(file)
+  onFileChanges(event: any): void {
+    const file = event[0].base64;
+    this.cadastroCliente.get('imagem')?.setValue(file);
   }
 
   verificaValidTouched(campo: string) {
@@ -83,10 +92,7 @@ export class CadastroUsuarioComponent implements OnInit {
           Validators.required
         ])
       ],
-      imagem: ['', Validators.compose([
-          Validators.required
-        ])
-      ]
+      imagem: ['']
     });
   }
 
