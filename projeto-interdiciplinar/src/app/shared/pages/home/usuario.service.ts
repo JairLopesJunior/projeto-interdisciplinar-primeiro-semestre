@@ -8,7 +8,7 @@ import { Usuario } from 'src/app/models/usuario';
 })
 export class UsuarioService {
 
-  private usuarioUrl: string = 'http://localhost:3000/usuarios';
+  private usuarioUrl: string = 'https://projeto-interdisciplinar-api.herokuapp.com/usuarios';
 
   constructor(private httpClient: HttpClient) {}
 
