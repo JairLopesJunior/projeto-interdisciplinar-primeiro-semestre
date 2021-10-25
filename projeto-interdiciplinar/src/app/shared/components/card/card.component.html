@@ -3,8 +3,21 @@
     <div class="card-body" align="center">
         <h5 class="card-title" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{{ nome }}</h5>
         <p class="card-text">{{ relato }}</p>
-        <button [routerLink]="['/usuario', id]" class="btn">
-            SAIBA MAIS
-        </button>
+
+        <div *ngIf="qualTipo === 'usuario'; then usuario else psicologo">
+        </div>
+
+        <ng-template #usuario>
+            <button [routerLink]="['/usuario', id]" class="btn">
+                SAIBA MAIS
+            </button>
+        </ng-template>
+
+        <ng-template #psicologo>
+            <button [routerLink]="['/psicologo', id]" class="btn">
+                SAIBA MAIS
+            </button>
+        </ng-template>
+
     </div>
 </div>

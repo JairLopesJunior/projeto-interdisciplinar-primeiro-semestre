@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Psicologo } from 'src/app/models/psicologo';
+import { PsicologoService } from '../cadastro-psicologo/psicologo.service';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,22 @@ import { Psicologo } from 'src/app/models/psicologo';
 })
 export class HomeComponent implements OnInit {
 
+  p: string = 'psicologo';
+
   psicologos: Psicologo[] = [];
 
-  constructor() { }
+  constructor(private psicologoService: PsicologoService) { }
 
   ngOnInit(): void {
+    this.retrieveAll();
   }
 
-
+  retrieveAll(): void{
+    this.psicologoService.retriveAll().subscribe({
+        next: psicologos => {
+          this.psicologos = psicologos;
+        },
+        error: err => alert('Error: ' + err)
+    })
+  }
 }

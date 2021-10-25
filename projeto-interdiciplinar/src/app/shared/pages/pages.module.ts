@@ -1,3 +1,4 @@
+import { CadastroPsicologoModule } from './cadastro-psicologo/cadastro-psicologo.module';
 import { CadastroUsuarioModule } from './cadastro-usuario/cadastro-usuario.module';
 import { CadastroModule } from './cadastro/cadastro.module';
 import { NgModule } from '@angular/core';
@@ -8,18 +9,20 @@ import { HomeModule } from './home/home.module';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { PostagemModule } from './postagem/postagem.module';
 import { CadastroPsicologoComponent } from './cadastro-psicologo/cadastro-psicologo.component';
+import { PsicologoComponent } from './psicologo/psicologo.component';
 
 
 @NgModule({
   declarations: [
     ContatoComponent,
     UsuarioComponent,
-    CadastroPsicologoComponent
+    PsicologoComponent
   ],
   imports: [
     CommonModule,
     CadastroModule,
     CadastroUsuarioModule,
+    CadastroPsicologoModule,
     HomeModule,
     PostagemModule
   ],

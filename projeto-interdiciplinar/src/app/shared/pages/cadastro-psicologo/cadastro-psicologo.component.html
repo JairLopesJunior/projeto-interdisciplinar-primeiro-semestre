@@ -55,7 +55,7 @@
         <div class="col">
             <div class="form-group" [ngClass]="aplicaCssErro('crp')">
                 <label for="inputState">CRP</label>
-                <input  type="text"
+                <input  type="number"
                         class="form-control"
                         formControlName="crp"
                         id="crp">
@@ -175,7 +175,7 @@
     </div> 
     
     <div>
-        <button class="btn btn-primary" [disabled]="cadastroCliente.invalid">Salvar</button>
+        <button class="btn btn-primary" [disabled]="cadastroPsicologo.invalid">Salvar</button>
     </div>
 
 </form>

@@ -9,6 +9,8 @@ import { UsuarioService } from '../home/usuario.service';
 })
 export class PostagemComponent implements OnInit {
 
+  u: string = 'usuario';
+
   usuarios: Usuario[] = [];
 
   constructor(private usuarioService: UsuarioService) { }

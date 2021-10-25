@@ -11,8 +11,7 @@ export class CardComponent implements OnInit {
   @Input() relato: string = '';
   @Input() imagem: string | undefined = '';
   @Input() id: number = 0;
-
-  idUsuario = this.id;
+  @Input() qualTipo: string = '';
 
   imagemPadrao: string | undefined;
 

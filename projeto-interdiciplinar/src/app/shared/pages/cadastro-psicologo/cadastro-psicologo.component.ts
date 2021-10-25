@@ -1,6 +1,7 @@
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PsicologoService } from './psicologo.service';
 
 @Component({
   selector: 'app-cadastro-psicologo',
@@ -26,7 +27,7 @@ export class CadastroPsicologoComponent implements OnInit {
       this._psicologoService.save(this.cadastroPsicologo.value).subscribe({
         next: psicologo => {
           alert("Salvo com sucesso.")
-          this._router.navigate([`usuario/${psicologo.id}`]);
+          this._router.navigate([`psicologo/${psicologo.id}`]);
         },
         error: err => {
           if(err.statusText === 'Payload Too Large') {
