@@ -32,8 +32,8 @@
 - ### <a href="https://www.postgresql.org/"> PostgreSQL </a>
 
 - ## Mais informações: 
-- ### <a href=""> Projeto Interdisciplinar API </a>
-- ### <a href=""> Projeto Interdisciplinar GUI </a>
+- ### <a href="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre-api"> Projeto Interdisciplinar API </a>
+- ### <a href="https://github.com/JairLopesJunior/projeto-interdiciplinar-gui"> Projeto Interdisciplinar GUI </a>
 
 
 ## Acesso Rápido:
