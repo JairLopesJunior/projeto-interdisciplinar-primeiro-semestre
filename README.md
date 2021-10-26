@@ -8,7 +8,7 @@
 
 ### <div align="center"> Solução: </div>
 
-#### <div> Criar um Software, que terá um assistente virtual como primeira interação e possibilitando tirar dúvidas básicas e auxiliar o usuário em uma direção, o usuário também poderá preencher uma ficha de cadastro com algumas informações que pode ser público ou privado, informando um pouco sobre o mesmo e também o seu relato psicologico, também terá o cadastro do Psicólogo informando alguns dados básicos e essenciais para que o usuário interessado possa entrar em contato. </div>
+#### <div> Criar um software, que terá um assistente virtual como primeira interação, possibilitando tirar dúvidas básicas e auxiliar o usuário em uma direção. O usuário também poderá preencher uma ficha de cadastro com algumas informações podendo optar por serem públicas ou privadas, informando sobre si próprio e também sobre o seu relato psicológico. Terá também, o cadastro do psicólogo, informando alguns dados básicos e essenciais para que o usuário interessado possa entrar em contato. </div>
 
 ## Criação de Wireframes e Artes: 
 - ### <a href="https://www.figma.com/"> Figma </a>
