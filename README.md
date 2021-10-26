@@ -1,4 +1,4 @@
-## <center>Curso DSM - Projeto Interdisciplinar - 1º Semestre</center>
+## <p style="text-align: center;">Curso DSM - Projeto Interdisciplinar - 1º Semestre</p>
 
 ### <center>Responsáveis:</center>
 
