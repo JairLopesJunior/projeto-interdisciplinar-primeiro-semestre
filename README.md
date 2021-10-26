@@ -1,6 +1,6 @@
 ## Curso DSM - Projeto Interdisciplinar - 1º Semestre
 
-Responsáveis:
+### Responsáveis:
 
 <b>Criação de wireframes e artes:</b> Figma
 # Acesso Rápido
