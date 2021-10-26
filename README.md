@@ -6,7 +6,7 @@
 
 #### <div align="center"> Efeitos psicologicos causados pela Pandemia. </div>
 
-### <div align="center"> Idéia do projeto: </div>
+### <div align="center"> Solução: </div>
 
 #### <p align="justify">
        
