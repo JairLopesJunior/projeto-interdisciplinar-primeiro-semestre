@@ -4,7 +4,7 @@
 
 ### <div align="center"> Problema: </div>
 
-#### Efeitos psicologicos causados pela Pandemia
+#### <div align="center"> Efeitos psicologicos causados pela Pandemia. </div>
 
 ### <div align="center"> Idéia do projeto: </div>
 
