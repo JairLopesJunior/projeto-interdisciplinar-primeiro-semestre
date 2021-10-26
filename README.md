@@ -1,6 +1,6 @@
 ## <div align="center"> Curso DSM - Projeto Interdisciplinar - 1º Semestre </div>
 ### <div align="center"> Responsáveis: </div>
-#### <a href="https://github.com/amosmikael"> Amós Mikael da Silva Santos</a>, </div> <div align="center"> <a href="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/README.md"> Jair Lopes Junior</a>, <a href="https://github.com/WesleyFernandez/projeto-interdisciplinar-primeiro-semestre"> Wesley Aparecido Fernandes</a>
+#### <div align="center"> <a href="https://github.com/amosmikael"> Amós Mikael da Silva Santos</a>, <a href="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/README.md"> Jair Lopes Junior</a>, <a href="https://github.com/WesleyFernandez/projeto-interdisciplinar-primeiro-semestre"> Wesley Aparecido Fernandes</a> </div>
 
 ### <div align="center"> Problema: </div>
 
