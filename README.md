@@ -14,6 +14,6 @@
 - ### <a href="https://www.figma.com/"> Figma </a>
 
 ## Acesso Rápido:
-### <a href="https://www.figma.com/proto/J7pBrghKb7zh3LzbgrD7Al/projeto-interdisciplinar-primeiro-semestre?node-id=125%3A57&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2"> Protótipo </a>
-### <a href="https://jairlopesjunior.github.io/projeto-interdiciplinar-gui/"> Site </a>
-### <a href="https://projeto-interdisciplinar-api.herokuapp.com/"> API </a>
+- ### <a href="https://www.figma.com/proto/J7pBrghKb7zh3LzbgrD7Al/projeto-interdisciplinar-primeiro-semestre?node-id=125%3A57&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2"> Protótipo </a>
+- ### <a href="https://jairlopesjunior.github.io/projeto-interdiciplinar-gui/"> Site </a>
+- ### <a href="https://projeto-interdisciplinar-api.herokuapp.com/"> API </a>
