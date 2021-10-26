@@ -1,6 +1,6 @@
 ## <div align="center"> Curso DSM - Projeto Interdisciplinar - 1º Semestre </div>
 ### <div align="center"> Responsáveis: </div>
-#### Jair Lopes Junior, 
+#### <a href=""> Jair Lopes Junior </a>, <a href=""> Wesley Aparecido Fernandes </a>
 
 ### <div align="center"> Problema: </div>
 
