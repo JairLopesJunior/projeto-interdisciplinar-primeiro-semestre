@@ -1,4 +1,4 @@
-# DSM - Projeto Interdisciplinar Primeiro Semestre
+DSM - Projeto Interdisciplinar Primeiro Semestre
 <b>Criação de wireframes e artes:</b> Figma
 
 # Acesso Rápido
