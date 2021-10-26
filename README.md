@@ -15,17 +15,18 @@
 
 ## Tecnologias Utilizadas:
 ### FrontEnd:
-- ### <a href=""> Angular </a>
-- ### <a href=""> Bootstrap </a>
-- ### <a href=""> rxJS </a>
+- ### <a href="https://angular.io/"> Angular </a>
+- ### <a href="https://getbootstrap.com/"> Bootstrap </a>
+- ### <a href="https://rxjs.dev/guide/overview"> RxJS </a>
 
 ### BackEnd:
-- ### <a href=""> NestJS </a>
-- ### <a href=""> TypeORM </a>
+- ### <a href="https://nestjs.com/"> NestJS </a>
+- ### <a href="https://typeorm.io/"> TypeORM </a>
 
 ### Ambos:
-- ### <a href=""> JavaScript </a>
-- ### <a href=""> TypeScript </a>
+- ### <a href="https://nodejs.org/en/"> NodeJS </a>
+- ### <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"> JavaScript </a>
+- ### <a href="https://www.typescriptlang.org/"> TypeScript </a>
 
 ### DataBase:
 - ### <a href="https://www.postgresql.org/"> PostgreSQL </a>
