@@ -1,6 +1,6 @@
 ## <div align="center"> Curso DSM - Projeto Interdisciplinar - 1º Semestre </div>
 ### <div align="center"> Responsáveis: </div>
-#### <a href="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/README.md"> Jair Lopes Junior</a>, <a href="https://github.com/WesleyFernandez/projeto-interdisciplinar-primeiro-semestre"> Wesley Aparecido Fernandes</a>, <a href=""> Amós Mikael da Silva Santos </a>
+#### <a href="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/README.md"> Jair Lopes Junior</a>, <a href="https://github.com/WesleyFernandez/projeto-interdisciplinar-primeiro-semestre"> Wesley Aparecido Fernandes</a>, <a href="https://github.com/amosmikael"> Amós Mikael da Silva Santos </a>
 
 ### <div align="center"> Problema: </div>
 
@@ -8,9 +8,7 @@
 
 ### <div align="center"> Solução: </div>
 
-#### <div>
-        Criar um Software, que terá um assistente virtual como primeira interação e possibilitando tirar dúvidas básicas e auxiliar o usuário em uma direção, o usuário também poderá preencher uma ficha de cadastro com algumas informações que pode ser público ou privado, informando um pouco sobre o mesmo e também o seu relato psicologico, também terá o cadastro do Psicólogo informando alguns dados básicos e essenciais para que o usuário interessado possa entrar em contato.
-     </div>
+#### <div> Criar um Software, que terá um assistente virtual como primeira interação e possibilitando tirar dúvidas básicas e auxiliar o usuário em uma direção, o usuário também poderá preencher uma ficha de cadastro com algumas informações que pode ser público ou privado, informando um pouco sobre o mesmo e também o seu relato psicologico, também terá o cadastro do Psicólogo informando alguns dados básicos e essenciais para que o usuário interessado possa entrar em contato. </div>
 
 <b>Criação de wireframes e artes:</b> Figma
 # Acesso Rápido
