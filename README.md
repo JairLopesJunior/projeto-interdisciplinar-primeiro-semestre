@@ -1,4 +1,4 @@
-## DSM - Projeto Interdisciplinar Primeiro Semestre
+## Curso DSM - Projeto Interdisciplinar - 1º Semestre
 <b>Criação de wireframes e artes:</b> Figma
 
 # Acesso Rápido
