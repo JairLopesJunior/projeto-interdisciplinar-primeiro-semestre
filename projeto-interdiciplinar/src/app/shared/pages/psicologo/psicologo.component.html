@@ -1,1 +1,37 @@
-<p>psicologo works!</p>
+<div class="row">
+
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+        <div class="row">
+
+            <div class="col-xs-8 col-sm-6 col-md-5 col-lg-3 circle">
+                <img src="{{ psicologo?.imagem }}">
+            </div>
+
+            <div class="col-xs-4 col-sm-6 col-md-7 col-lg-9">
+                <h3>{{ psicologo?.nome }}</h3>
+                <h5>Psicologia Clínica</h5>
+                <h5>{{ psicologo?.cidade }}, {{ psicologo?.estado }} - Brasil</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="meu-hr mt-3">
+        <p>SOBRE MIM</p><hr>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            {{ psicologo?.sobreMim }}
+        </div>
+    </div>
+
+    <div class="meu-hr mt-3">
+        <p>EXPERIÊNCIAS</p><hr>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+           
+        </div>
+    </div>
+</div>

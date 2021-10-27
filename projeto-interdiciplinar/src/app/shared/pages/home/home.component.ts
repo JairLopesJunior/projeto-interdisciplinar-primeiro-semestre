@@ -13,6 +13,10 @@ export class HomeComponent implements OnInit {
 
   psicologos: Psicologo[] = [];
 
+  filteredPsicologos: Psicologo[] = [];
+
+  filterBy: string = "";
+
   constructor(private psicologoService: PsicologoService) { }
 
   ngOnInit(): void {
@@ -23,8 +27,19 @@ export class HomeComponent implements OnInit {
     this.psicologoService.retriveAll().subscribe({
         next: psicologos => {
           this.psicologos = psicologos;
+          this.filteredPsicologos = this.psicologos;
         },
         error: err => alert('Error: ' + err)
     })
+  }
+
+  set filter(value: string) { 
+    this.filterBy = value;
+
+    this.psicologos = this.filteredPsicologos.filter((psicologo: Psicologo) => psicologo.nome.toLocaleLowerCase().indexOf(this.filterBy.toLocaleLowerCase()) > -1);
+  }
+
+  get filter() { 
+    return this.filterBy;
   }
 }

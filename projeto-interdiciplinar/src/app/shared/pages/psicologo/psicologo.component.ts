@@ -1,4 +1,7 @@
+import { Psicologo } from './../../../models/psicologo';
 import { Component, OnInit } from '@angular/core';
+import { PsicologoService } from '../cadastro-psicologo/psicologo.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-psicologo',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PsicologoComponent implements OnInit {
 
-  constructor() { }
+  psicologo: Psicologo;
+
+  constructor(private _psicologoService: PsicologoService,
+              private _activatedRoute: ActivatedRoute,) { }
 
   ngOnInit(): void {
+    this._psicologoService.retrieveById(Number(this._activatedRoute.snapshot.paramMap.get('id'))).subscribe({
+      next: psicologo => {
+        psicologo.imagem = psicologo.imagem ?? 'assets/imagem.png';
+        this.psicologo = psicologo
+      },
+      error: err => alert('Error: ' + err)
+    });
   }
-
 }

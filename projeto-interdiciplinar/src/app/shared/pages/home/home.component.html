@@ -20,9 +20,9 @@
     <div class="row">
         <div class="input-group mb-3">
             <label style="margin-top: 0.5rem; margin-right: 1rem;">Filtre por:</label>
-            <input placeholder="Nome, profissão e descrição" class="form-control">
+            <input [(ngModel)]="filter" placeholder="Nome" class="form-control">
         </div>
-    </div>
+    </div>{{filter}}
 
     <!-- Cards -->
     <div class="row mt-4" style="margin-bottom: 5rem;">
