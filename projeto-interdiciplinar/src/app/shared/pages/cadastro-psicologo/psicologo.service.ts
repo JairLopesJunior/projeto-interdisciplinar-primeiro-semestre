@@ -8,7 +8,7 @@ import { Psicologo } from 'src/app/models/psicologo';
 })
 export class PsicologoService {
 
-  private psicologoUrl: string = 'https://projeto-interdisciplinar-api.herokuapp.com/psicologos';
+  private psicologoUrl: string = 'http://localhost:3000/psicologos';
 
   constructor(private httpClient: HttpClient) {}
 
