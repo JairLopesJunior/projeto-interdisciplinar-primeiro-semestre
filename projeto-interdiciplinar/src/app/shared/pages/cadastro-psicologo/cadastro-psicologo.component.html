@@ -35,7 +35,7 @@
             </div>
         </div>
     </div> 
-    
+
     <div class="row mb-3">
         <div class="col">
             <div class="form-group" [ngClass]="aplicaCssErro('telefone')">
@@ -43,7 +43,8 @@
                 <input  type="text"
                         class="form-control"
                         formControlName="telefone"
-                        id="telefone">
+                        id="telefone"
+                        mask="(00) 0 0000-0000||(00) 0000-0000">
 
                 <app-campo-control-erro
                     [mostrarErro]="verificaValidTouched('telefone')" 
@@ -55,10 +56,11 @@
         <div class="col">
             <div class="form-group" [ngClass]="aplicaCssErro('crp')">
                 <label for="inputState">CRP</label>
-                <input  type="number"
+                <input  type="text"
                         class="form-control"
                         formControlName="crp"
-                        id="crp">
+                        id="crp"
+                        mask="00/0000">
 
                 <app-campo-control-erro 
                     [mostrarErro]="verificaValidTouched('crp')" 

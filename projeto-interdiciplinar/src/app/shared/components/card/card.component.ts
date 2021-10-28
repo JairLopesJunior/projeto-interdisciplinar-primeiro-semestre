@@ -13,8 +13,6 @@ export class CardComponent implements OnInit {
   @Input() id: number = 0;
   @Input() qualTipo: string = '';
 
-  imagemPadrao: string | undefined;
-
   constructor() { }
 
   ngOnInit(): void {
@@ -23,10 +21,7 @@ export class CardComponent implements OnInit {
   }
 
   definirImagem() {
-    if( this.imagem) {
-      this.imagemPadrao = this.imagem;
-    }
-    this.imagemPadrao = 'assets/imagem.png';
+    this.imagem = this.imagem !== '' ? this.imagem : 'assets/imagem.png';
   }
 
   modificandoNome() {

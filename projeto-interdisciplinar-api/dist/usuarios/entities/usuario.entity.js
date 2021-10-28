@@ -18,7 +18,7 @@ __decorate([
     __metadata("design:type", Number)
 ], Usuario.prototype, "id", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ length: 120, nullable: false }),
+    (0, typeorm_1.Column)({ length: 100, nullable: false }),
     __metadata("design:type", String)
 ], Usuario.prototype, "nome", void 0);
 __decorate([

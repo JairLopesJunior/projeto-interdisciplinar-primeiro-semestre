@@ -24,6 +24,10 @@ export class CadastroUsuarioComponent implements OnInit {
 
   onSubmit(): void {
     if(this.cadastroCliente.valid) {
+      const tipo = this.cadastroCliente.get('tipo')?.value;
+      if(+tipo === 1){
+        this.adaptarValoresParaAnonimo();
+      }
       this._usuarioService.save(this.cadastroCliente.value).subscribe({
         next: usuario => {
           alert("Salvo com sucesso.")
@@ -72,12 +76,12 @@ export class CadastroUsuarioComponent implements OnInit {
       ],
       sobreMim: ['', Validators.compose([
           Validators.required,
-          Validators.maxLength(100)
+          Validators.maxLength(350)
         ])
       ],
       relato: ['', Validators.compose([
           Validators.required,
-          Validators.maxLength(100)
+          Validators.maxLength(350)
         ])
       ],
       tipo: ['', Validators.compose([
@@ -94,6 +98,12 @@ export class CadastroUsuarioComponent implements OnInit {
       ],
       imagem: ['']
     });
+  }
+
+  // Métodos privados
+  private adaptarValoresParaAnonimo(): void {
+    this.cadastroCliente.get('nome')?.patchValue('ANÔNIMO');
+    this.cadastroCliente.get('imagem')?.patchValue('');
   }
 
 }

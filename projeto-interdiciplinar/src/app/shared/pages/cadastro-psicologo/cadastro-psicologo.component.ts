@@ -73,8 +73,8 @@ export class CadastroPsicologoComponent implements OnInit {
       ],
       telefone: ['', Validators.compose([
           Validators.required,
-          Validators.maxLength(15),
-          Validators.minLength(15)
+          Validators.maxLength(11),
+          Validators.minLength(10)
         ])
       ],
       crp: ['', Validators.compose([

@@ -3,7 +3,7 @@ export declare class Psicologo {
     nome: string;
     email: string;
     telefone: string;
-    crp: number;
+    crp: string;
     preco: number;
     experiencia: string;
     facebook: string;

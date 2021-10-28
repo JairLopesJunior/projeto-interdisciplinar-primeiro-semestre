@@ -18,15 +18,15 @@ __decorate([
     __metadata("design:type", Number)
 ], Psicologo.prototype, "id", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ length: 120 }),
+    (0, typeorm_1.Column)({ length: 100 }),
     __metadata("design:type", String)
 ], Psicologo.prototype, "nome", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ length: 60 }),
+    (0, typeorm_1.Column)({ length: 100 }),
     __metadata("design:type", String)
 ], Psicologo.prototype, "email", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ length: 15 }),
+    (0, typeorm_1.Column)({ length: 11 }),
     __metadata("design:type", String)
 ], Psicologo.prototype, "telefone", void 0);
 __decorate([

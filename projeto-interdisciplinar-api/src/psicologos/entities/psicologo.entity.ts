@@ -6,17 +6,17 @@ export class Psicologo {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({ length: 120, nullable: false })
+    @Column({ length: 100, nullable: false })
     nome: string;
 
-    @Column({ length: 50, nullable: false })
+    @Column({ length: 100, nullable: false })
     email: string;
 
-    @Column({ length: 15, nullable: false })
+    @Column({ length: 11, nullable: false })
     telefone: string;
 
     @Column({ nullable: false })
-    crp: number;
+    crp: string;
 
     @Column({ nullable: false })
     preco: number;
