@@ -7,15 +7,33 @@
                 <img src="{{ psicologo?.imagem }}">
             </div>
 
-            <div class="col-xs-4 col-sm-6 col-md-7 col-lg-9">
+            <div class="col-xs-4 col-sm-6 col-md-7 col-lg-6">
                 <h3>{{ psicologo?.nome }}</h3>
                 <h5>Psicologia Clínica</h5>
                 <h5>{{ psicologo?.cidade }}, {{ psicologo?.estado }} - Brasil</h5>
+                <div class="row mt-4" style="line-height: 0.5;">
+                    <div class="col-xs-4 col-sm-6 col-md-7 col-lg-6">
+                        <h5 style="margin-bottom: 0px;">R$ {{ psicologo?.preco }}</h5>
+                        <p style="font-size: 11px;">No particular</p>
+                    </div>
+                    <div style="position: relative;" class="col-xs-4 col-sm-6 col-md-7 col-lg-6">
+                        
+                        <h5 style="left: 0;" align="center">
+                            <i class="far fa-clock fa-sm"></i>
+                            50 min
+                            <p style="font-size: 11px; margin-left: 15px;">Duração da consulta</p>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-6 col-md-7 col-lg-3">
+                
             </div>
         </div>
     </div>
 
-    <div class="meu-hr mt-3">
+    <div class="meu-hr mt-1">
         <p>SOBRE MIM</p><hr>
     </div>
 
