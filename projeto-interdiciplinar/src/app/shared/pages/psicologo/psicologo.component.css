@@ -74,3 +74,18 @@ p {
     border: solid 0.1em;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+.component-p {
+    width: 200px; 
+    height: 35px; 
+    background: white; 
+    border-radius: 40px; 
+    border: 0.1px solid rgba(0, 0, 0, 0.15);;
+    display: table-cell;
+    vertical-align: middle;
+    color: black;
+}
+
+.component-p:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

@@ -125,8 +125,7 @@
             <div class="form-group" [ngClass]="aplicaCssErro('estado')">
                 <label for="inputState">Estado</label>
                 <select id="inputState" class="form-control" formControlName="estado">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                    <option *ngFor="let estado of estados" [value]="estado.Nome">{{ estado.Nome }}</option>
                 </select>
 
                 <app-campo-control-erro 
@@ -140,8 +139,7 @@
             <div class="form-group" [ngClass]="aplicaCssErro('cidade')">
                 <label for="inputState">Cidade</label>
                 <select id="inputState" class="form-control" formControlName="cidade">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                    <option *ngFor="let estado of estados" selected>{{estado.Nome}}</option>
                 </select>
 
                 <app-campo-control-erro 

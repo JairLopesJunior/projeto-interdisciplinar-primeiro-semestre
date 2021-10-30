@@ -15,25 +15,25 @@ export class Psicologo {
     @Column({ length: 11, nullable: false })
     telefone: string;
 
-    @Column({ nullable: false })
+    @Column({ length: 6, nullable: false })
     crp: string;
 
     @Column({ nullable: false })
     preco: number;
 
-    @Column("text", { array: true })
+    @Column("text", { array: true})
     experiencia: string[];
 
-    @Column()
+    @Column({nullable: true})
     facebook: string;
 
-    @Column({ length: 30, nullable: false })
+    @Column({ length: 30, nullable: false})
     estado: string;
 
-    @Column({ length: 50, nullable: false })
+    @Column({ length: 50, nullable: false})
     cidade: string;
 
-    @Column("text", { nullable: false })
+    @Column("text", { nullable: false})
     sobreMim: string;
 
     @Column("text")

@@ -1,1 +1,0 @@
-{"version":3,"file":"psicologo.providers.js","sourceRoot":"","sources":["../../src/models/psicologo.providers.ts"],"names":[],"mappings":";;;AACA,yDAA+C;AAElC,QAAA,kBAAkB,GAAG;IAC9B;QACI,OAAO,EAAE,sBAAsB;QAC/B,UAAU,EAAE,CAAC,UAAsB,EAAE,EAAE,CAAC,UAAU,CAAC,aAAa,CAAC,4BAAS,CAAC;QAC3E,MAAM,EAAE,CAAC,qBAAqB,CAAC;KAClC;CACJ,CAAC"}
