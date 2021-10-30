@@ -89,10 +89,13 @@
         <div class="col">
             <div class="form-group" [ngClass]="aplicaCssErro('experiencia')">
                 <label for="inputState">Experiência</label>
-                <input  type="text"
+                <ng-select [multiple]="true" formControlName="experiencia">
+                    <ng-option *ngFor="let xp of experiencias" [value]="xp.experiencia">{{xp.experiencia}}</ng-option>
+                </ng-select>
+                <!--<input  type="text"
                         class="form-control"
                         formControlName="experiencia"
-                        id="experiencia">
+                        id="experiencia">-->
 
                 <app-campo-control-erro 
                     [mostrarErro]="verificaValidTouched('experiencia')" 

@@ -21,8 +21,8 @@ export class Psicologo {
     @Column({ nullable: false })
     preco: number;
 
-    @Column("text", { nullable: false })
-    experiencia: string;
+    @Column("text", { array: true })
+    experiencia: string[];
 
     @Column()
     facebook: string;

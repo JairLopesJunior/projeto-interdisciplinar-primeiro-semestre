@@ -5,7 +5,7 @@ export class CreatePsicologoDto {
     email!: string;
     telefone!: string;
     preco!: number;
-    experiencia!: string;
+    experiencia!: string[];
     facebook?: string;
     estado!: string;
     cidade!: string;

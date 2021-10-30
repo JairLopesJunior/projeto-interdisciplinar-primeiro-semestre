@@ -8,7 +8,7 @@ import { SelectModule } from '../../components/select/select.module';
 import { CadastroPsicologoComponent } from './cadastro-psicologo.component';
 import { RouterModule } from '@angular/router';
 import { NgxMaskModule } from 'ngx-mask';
-
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -19,6 +19,7 @@ import { NgxMaskModule } from 'ngx-mask';
     CommonModule,
     SelectModule,
     FormsModule,
+    NgSelectModule,
     ReactiveFormsModule,
     CampoControlErroModule,
     AlifeFileToBase64Module,

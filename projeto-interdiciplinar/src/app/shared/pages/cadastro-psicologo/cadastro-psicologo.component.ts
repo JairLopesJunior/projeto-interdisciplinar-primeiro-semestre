@@ -10,6 +10,24 @@ import { PsicologoService } from './psicologo.service';
 })
 export class CadastroPsicologoComponent implements OnInit {
 
+  experiencias = [
+      { experiencia: 'Adolescência' },
+      { experiencia: 'Ansiedade' },
+      { experiencia: 'Assédio Moral' },
+      { experiencia: 'Autoconhecimento' },
+      { experiencia: 'Câncer' },
+      { experiencia: 'Conflitos Amorosos' },
+      { experiencia: 'Conflitos Familiares' },
+      { experiencia: 'Depressão' },
+      { experiencia: 'Estresse' },
+      { experiencia: 'Idade Adulta' },
+      { experiencia: 'Medos' },
+      { experiencia: 'Morte e Luto' },
+      { experiencia: 'Orientação Profissional' },
+      { experiencia: 'Separação' },
+      { experiencia: 'Traumas' },
+  ];
+
   cadastroPsicologo: FormGroup;
 
   imagemBase64: string;
@@ -87,7 +105,7 @@ export class CadastroPsicologoComponent implements OnInit {
           Validators.required
         ])
       ],
-      experiencia: ['', Validators.compose([
+      experiencia: [null, Validators.compose([
           Validators.required,
           Validators.maxLength(350)
         ])

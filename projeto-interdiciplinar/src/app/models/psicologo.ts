@@ -5,7 +5,7 @@ export class Psicologo {
     'telefone'!: string;
     'crp'!: string;
     'preco'!: number;
-    'experiencia'!: string;
+    'experiencia'!: string[];
     'facebook'?: string;
     'estado'!: string;
     'cidade'!: string;

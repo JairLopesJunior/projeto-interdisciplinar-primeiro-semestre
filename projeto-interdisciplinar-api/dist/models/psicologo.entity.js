@@ -39,7 +39,7 @@ __decorate([
 ], Psicologo.prototype, "preco", void 0);
 __decorate([
     (0, typeorm_1.Column)("text"),
-    __metadata("design:type", String)
+    __metadata("design:type", Array)
 ], Psicologo.prototype, "experiencia", void 0);
 __decorate([
     (0, typeorm_1.Column)({ length: 150 }),
