@@ -4,7 +4,7 @@
 
 ### <div align="center"> Problema: </div>
 
-#### <div align="center"> Efeitos psicologicos causados pela Pandemia. </div>
+#### <div align="center"> Efeitos psicologicos. </div>
 
 ### <div align="center"> Solução: </div>
 
