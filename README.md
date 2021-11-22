@@ -12,7 +12,7 @@
 
 ### <div align="center"> Logotipo: </div>
 
-#### <div align="center">![Alt text](/https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/logotipo.jpeg?raw=true "Logotipo")</div>
+#### <div align="center">![Alt text](https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/logotipo.jpeg?raw=true "Logotipo")</div>
 
 ## Criação de Wireframes e Artes: 
 - ### <a href="https://www.figma.com/"> Figma </a>
