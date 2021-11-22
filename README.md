@@ -12,7 +12,7 @@
 
 ### <div align="center"> Logotipo: </div>
 
-#### <div align="center"><a href="https://i.pinimg.com/originals/a8/ec/94/a8ec942b6baffce1b8d088821b1cbec9.png"></a></div>
+#### <div align="center"><a href=""></a></div>
 
 ## Criação de Wireframes e Artes: 
 - ### <a href="https://www.figma.com/"> Figma </a>
