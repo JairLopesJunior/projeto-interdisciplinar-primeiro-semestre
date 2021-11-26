@@ -10,6 +10,10 @@
 
 #### <div> Criar um software, que terá um assistente virtual como primeira interação, possibilitando tirar dúvidas básicas e auxiliar o usuário em uma direção. O usuário também poderá preencher uma ficha de cadastro com algumas informações podendo optar por serem públicas ou privadas, informando sobre si próprio e também sobre o seu relato psicológico. Terá também, o cadastro do psicólogo, informando alguns dados básicos e essenciais para que o usuário interessado possa entrar em contato. </div>
 
+### <div align="center"> Logotipo: </div>
+
+#### <div align="center"><img src="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/logotipo.jpeg" width="200px"></img></div> 
+
 ## Criação de Wireframes e Artes: 
 - ### <a href="https://www.figma.com/"> Figma </a>
 
@@ -31,9 +35,9 @@
 ### DataBase:
 - ### <a href="https://www.postgresql.org/"> PostgreSQL </a>
 
-### Mais informações: 
-- ### <a href="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre-api"> Projeto Interdisciplinar API </a>
-- ### <a href="https://github.com/JairLopesJunior/projeto-interdiciplinar-gui"> Projeto Interdisciplinar GUI </a>
+### Mais informações e como utilizar: 
+- ### <a href="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre-api"> BackEnd (API) </a>
+- ### <a href="https://github.com/JairLopesJunior/projeto-interdiciplinar-gui"> FrontEnd (GUI) </a>
 
 
 ## Acesso Rápido:
