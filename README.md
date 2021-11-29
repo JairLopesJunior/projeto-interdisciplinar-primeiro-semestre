@@ -14,6 +14,60 @@
 
 #### <div align="center"><img src="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/logotipo.jpeg" width="200px"></img></div> 
 
+## Descritivos de Diretorios:
+
+### Descritivo do BackEnd (API):
+
+```
+── src
+│   ├── database
+│   ├── psicologos
+│   │   ├── dto
+│   │   └── entities
+│   └── usuarios
+│       ├── dto
+│       └── entities
+└── test
+```
+
+### Descritivo do FrontEnd (GUI):
+
+```
+├── dist
+│   └── projeto-interdiciplinar
+│       └── assets
+│           └── icons
+├── docs
+│   └── assets
+│       └── icons
+└── src
+    ├── app
+    │   ├── models
+    │   └── shared
+    │       ├── components
+    │       │   ├── campo-control-erro
+    │       │   ├── card
+    │       │   ├── file
+    │       │   ├── footer
+    │       │   ├── loading
+    │       │   ├── navbar
+    │       │   └── select
+    │       ├── pages
+    │       │   ├── cadastro
+    │       │   ├── cadastro-psicologo
+    │       │   ├── cadastro-usuario
+    │       │   ├── contato
+    │       │   ├── home
+    │       │   ├── postagem
+    │       │   ├── psicologo
+    │       │   └── usuario
+    │       └── utils
+    │           └── body-style
+    ├── assets
+    │   └── icons
+    └── environments
+```
+
 ## Criação de Wireframes e Artes: 
 - ### <a href="https://www.figma.com/"> Figma </a>
 
