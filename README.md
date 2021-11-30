@@ -12,7 +12,7 @@
 
 ### <div align="center"> Logotipo: </div>
 
-#### <div align="center"><img src="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/logotipo.jpeg" width="200px"></img></div> 
+#### <div align="center"><img src="https://github.com/JairLopesJunior/projeto-interdisciplinar-primeiro-semestre/blob/main/logotipo.png" width="200px"></img></div> 
 
 ## Descritivos de Diretorios:
 
